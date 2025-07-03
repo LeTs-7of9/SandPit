@@ -4,152 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje osobní stránky</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        
-        .container {
-            display: flex;
-            min-height: 100vh;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        /* Levý sloupec - navigace */
-        .sidebar {
-            width: 250px;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            height: 100vh;
-            overflow-y: auto;
-        }
-        
-        .sidebar h1 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #ecf0f1;
-        }
-        
-        .sidebar h2 {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            color: #bdc3c7;
-        }
-        
-        .sidebar nav ul {
-            list-style: none;
-        }
-        
-        .sidebar nav ul li {
-            margin-bottom: 8px;
-        }
-        
-        .sidebar nav ul li a {
-            color: #ecf0f1;
-            text-decoration: none;
-            display: block;
-            padding: 8px 0;
-            border-left: 3px solid transparent;
-            padding-left: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .sidebar nav ul li a:hover {
-            background-color: #34495e;
-            border-left-color: #3498db;
-        }
-        
-        .sidebar nav ul li a.active {
-            background-color: #3498db;
-            border-left-color: #2980b9;
-        }
-        
-        /* Pravý sloupec - obsah */
-        .content {
-            flex: 1;
-            margin-left: 250px;
-            padding: 30px;
-        }
-        
-        .content-section {
-            display: none;
-        }
-        
-        .content-section.active {
-            display: block;
-        }
-        
-        .content-section h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        
-        .content-section p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        /* Responzivní design */
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: static;
-            }
-            
-            .content {
-                margin-left: 0;
-            }
-            
-            .container {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="sandPitA.css">
 </head>
 <body>
     <div class="container">
         <!-- Levý sloupec - navigace -->
         <div class="sidebar">
-            <h1>Hlavní nadpis</h1>
-            <h2>Podnadpis</h2>
+            <h1>SandPit</h1>
+            <h2>Poznámkový blok</h2>
             <nav>
                 <ul>
-                    <li><a href="#" data-section="uvod" class="nav-link active">– Úvod</a></li>
-                    <li><a href="#" data-section="projekty" class="nav-link">– Projekty</a></li>
+                    <li><a href="#" data-section="Vesmir" class="nav-link active">– Vesír</a></li>
+                    <li><a href="#" data-section="SITELLE" class="nav-link">– SITTELE</a></li>
                     <li><a href="#" data-section="experimenty" class="nav-link">– Experimenty</a></li>
-                    <li><a href="#" data-section="soubory" class="nav-link">– Soubory</a></li>
-                    <li><a href="#" data-section="kontakt" class="nav-link">– Kontakt</a></li>
                 </ul>
             </nav>
         </div>
         
         <!-- Pravý sloupec - obsah -->
         <div class="content">
-            <div id="uvod" class="content-section active">
+            <div id="Vesmir" class="content-section active">
                 <h2>Úvod</h2>
                 <p>Vítejte na mých osobních stránkách! Toto je místo, kde experimentuji s různými webovými technologiemi a sdílím své projekty.</p>
                 <p>Postupně zde budu přidávat různé aplikace, experimenty a užitečné nástroje.</p>
             </div>
             
-            <div id="projekty" class="content-section">
-                <h2>Projekty</h2>
+            <div id="SITTELE" class="content-section">
+                <h2>SITELLE</h2>
                 <p>Zde najdete moje dokončené projekty:</p>
                 <ul>
                     <li>Projekt 1 - popis</li>
@@ -162,18 +43,6 @@
                 <h2>Experimenty</h2>
                 <p>Experimentální sekce pro testování nových funkcionalit:</p>
                 <p>Zde budu zkoušet různé JavaScript knihovny, CSS efekty a další webové technologie.</p>
-            </div>
-            
-            <div id="soubory" class="content-section">
-                <h2>Soubory</h2>
-                <p>Sekce pro sdílení souborů a médií:</p>
-                <p>Dokumenty, obrázky, videa a další materiály budou dostupné zde.</p>
-            </div>
-            
-            <div id="kontakt" class="content-section">
-                <h2>Kontakt</h2>
-                <p>Pokud máte nějaké dotazy nebo návrhy, neváhejte se ozvat!</p>
-                <p>Email: vas@email.cz</p>
             </div>
         </div>
     </div>
